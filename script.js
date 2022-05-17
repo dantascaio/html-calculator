@@ -75,7 +75,7 @@ document.querySelector("#backspace").addEventListener("click", removeLastNumber)
 
 const invertSignal = () => {
     newNumber = true;
-    updateDisplay(display.textContent * -1);
+    updateDisplay(replaceDots(replaceCommas(display.textContent) * -1));
 }
 
 function replaceCommas(number) {
